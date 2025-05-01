@@ -1,0 +1,16 @@
+- title: "PyGIS"
+  description: "Open Source Spatial Programming & Remote Sensing "
+  date: "2025-01-01"
+  authors:
+    - "Jane Doe"
+    - "John Smith"
+  embed:
+    sourceUrl: "assets/pubs/pygis/pygis.warc"
+    url: "https://pygis.io/docs/a_intro.html"
+
+- title: "Test2"
+  description: "Description for publication 2"
+  date: "2025-02-02"
+  embed:
+    sourceUrl: "assets/pubs/test/tweet-example.wacz"
+    url: "https://oembed.link/https://twitter.com/webrecorder_io/status/1565881026215219200"
