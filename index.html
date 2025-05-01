@@ -2,22 +2,34 @@
 layout: default
 title: Home
 ---
+
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-<h1>Publications</h1>
+
+<h1>ACME Open Educational Resource - Web Archives Collection</h1>
+
+<div class="intro_p">
+  <p>The Adapting Course Materials for Equity (ACME) faculty grant awards stipends to GW faculty who want to adopt and adapt open or zero-cost course materials.</p>
+</div>
+
 <div class="card-grid">
-  {% for pub in site.data.publications %}
+<!--reverse oubs sort by year-->
+  {% assign sorted_pubs = site.data.publications | sort: "date" | reverse %}
+  {% for pub in sorted_pubs %}
     <div class="card">
       <h2><a href="/publications/{{ pub.title | slugify }}/">{{ pub.title }}</a></h2>
+
       {% if pub.authors %}
         <p><strong>
-            {% if pub.authors.size > 1 %}
-              Authors:
-            {% else %}
-              Author:
-            {% endif %}
+        <!---if multiple authors present "authors", if 1 author present "author"-->
+          {% if pub.authors.size > 1 %}
+            Authors:
+          {% else %}
+            Author:
+          {% endif %}
         </strong> {{ pub.authors | join: ', ' }}</p>
       {% endif %}
-      <p><strong>Date:</strong> {{ pub.date }}</p>
+
+      <p><strong>ACME Grant Year:</strong> {{ pub.date }}</p>
       <p>{{ pub.description }}</p>
     </div>
   {% endfor %}

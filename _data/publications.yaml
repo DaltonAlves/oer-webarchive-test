@@ -1,16 +1,30 @@
 - title: "PyGIS"
   description: "Open Source Spatial Programming & Remote Sensing "
-  date: "2025-01-01"
+  date: "2023"
   authors:
-    - "Jane Doe"
-    - "John Smith"
+    - "Michael Manne"
+    - "Steven Chao"
+    - "Jordan Graesser"
+    - "Nina Feldman"
   embed:
     sourceUrl: "assets/pubs/pygis/pygis.warc"
     url: "https://pygis.io/docs/a_intro.html"
 
 - title: "Test2"
-  description: "Description for publication 2"
-  date: "2025-02-02"
+  description: "testing sort order"
+  authors:
+    - "Dalton"
+  date: "2025"
   embed:
     sourceUrl: "assets/pubs/test/tweet-example.wacz"
     url: "https://oembed.link/https://twitter.com/webrecorder_io/status/1565881026215219200"
+
+- title: "Applied Categorical Data Analysis"
+  description: "An open textbook in Applied Categorical Data Analysis for the course of similar name, PUBH 6865."
+  date: "2023"
+  authors:
+    - "Juan H Klopper (MD)"
+    - "Do Hee Lee (MPH)"
+  embed:
+    sourceUrl: "assets/pubs/acda/acda.warc"
+    url: "https://blogs.gwu.edu/juanklopper/educational-resources/applied-categorical-data-analysis/"
